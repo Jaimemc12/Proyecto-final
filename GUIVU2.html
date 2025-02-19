@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre Nosotros</title>
 </head>
 
 <style>
     body {
         background-color: beige;
         font-family: Arial, sans-serif;
-        color: #333;
+        color: white;
         }
+        
     header {
         background-color: #333;
         color: white;
         padding: 1px 0;
         text-align: center;
         }
+
     nav a {
         color: white;
         margin: 0 15px;
         text-decoration: none;
         }
+
     h1, h2, h3 {
         color:#e7b40c;
         }
@@ -35,9 +38,46 @@
         border: #e7b40c 20px;
         border-color: #e7b40c;
     }
-    
-    
+
+    .about-section {
+            
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+    }
+
+    .about-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .team-member {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .team-member img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 100px;
+        height: 100px;
+        border: 3px solid #33ccff;
+    }
+
+    li:before {
+        content: '★';
+        color: #33ccff;
+        padding-right: 10px;
+    }
+
+    a {
+        color: #33ccff;
+    }
 </style>
+
 
 <body>
 
@@ -56,29 +96,57 @@
     </div> 
 
 
-
-    <div>
-        <header>
-            <h1>SOBRE NOSOTROS</h1>
-        </header>
-
-        <section id="about">
-            <h2>Sobre Nosotros y mas</h2>
-            <p>GUIVU es una web líder en distribución de eventos sobre videojuegos y tambien eSports. Nos apasiona crear experiencias inolvidables para nuestros jugadores.</p>
-        </section>
-    </div>
-
-    <article class="articulo">
-        <div class="articulo-contenido">
-            <h2></h2>
-            <p>explicacion evento</p>
-            <sub>Redaccion</sub>
+    <header>
+        <h1>Sobre Nosotros</h1>
+    </header>
+    
+    <div class="about-section">
+        <h2>Nuestra Historia</h2>
+        <p>Somos un equipo apasionado por los videojuegos y los eventos que los rodean. Desde nuestra fundación en 2024, hemos ayudado a más de 100 eventos de videojuegos en todo el mundo, reuniendo a jugadores, desarrolladores y entusiastas para celebrar su pasión compartida.</p>
+        
+        <h2>Misión y Visión</h2>
+        <p>Nuestra misión es crear experiencias inolvidables que unan a la comunidad de jugadores. Aspiramos a ser el principal promotor de eventos de videojuegos, conocido por nuestra innovación y dedicación.</p>
+        
+        <h2>Valores</h2>
+            <ul>
+                <li><strong>Pasión:</strong> Vivimos y respiramos videojuegos.</li>
+                <li><strong>Innovación:</strong> Siempre buscamos nuevas formas de mejorar nuestras experiencias.</li>
+                <li><strong>Comunidad:</strong> Creemos en el poder de unir a las personas a través del juego y de los eventos.</li>
+            </ul>
+      
+        <h2>Equipo</h2>
+        <div class="team-member">
+            <img src="imagenes/image0 (1).jpeg">
+            <div>
+                <h3>Jaime Martin Callejas</h3>
+                <p>CEO y Fundador</p>
+                <p>Jaime es un veterano de la industria del juego con más de 5 años de experiencia. Fundó esta empresa con la visión de crear un espacio donde los jugadores puedan reunirse y compartir su amor por los videojuegos.</p>
+            </div>
         </div>
-    </article>
-
-
-
-
+        <div class="team-member">
+            <img src="imagenes/señor interrogacion.webp">
+            <div>
+                <h3>David Virgen</h3>
+                <p>CTO</p>
+                <p>David es la mente técnica detrás de nuestros eventos. Con un profundo conocimiento de las tecnologías emergentes, asegura que cada evento esté a la vanguardia de la innovación.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about-section">
+        <h2>Productos y Servicios</h2>
+        <p>Organizamos una amplia variedad de eventos de videojuegos, desde torneos competitivos hasta convenciones y lanzamientos de nuevos juegos. Nos enorgullece ofrecer una experiencia única y memorable para todos los asistentes a nuestra pagina web.</p>
+    </div>
+    
+    <div class="about-section">
+        <h2>Compromiso con la Comunidad</h2>
+        <p>Nos dedicamos a apoyar a la comunidad de jugadores a través de diversas iniciativas, como programas educativos y eventos benéficos. Creemos que los videojuegos pueden ser una fuerza positiva en la sociedad.</p>
+    </div>
+    
+    <div class="about-section">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o quieres saber más sobre nuestra pagina web o proximos eventos? ¡Ponte en contacto con nosotros a través de <a href="mailto:contacto@guivu.com">contacto@guivu.com</a>!</p>
+    </div>
 
 </body>
 </html>

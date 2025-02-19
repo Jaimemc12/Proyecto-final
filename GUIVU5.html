@@ -1,67 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comunidad</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        h1, h2, h3 {
+            color: #e7b40c;
+        }
+        div {
+            margin: 15px;
+            text-align: center;
+
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin: 15px;
+        }
+        .comentario {
+            text-align: left;
+            padding: 10px;
+            margin: 20px;
+            height: 100px;
+            width: 200px;
+            border: solid 2px #333;
+            border-radius: 20px;
+            background-color: white;
+        }
+    </style>
 </head>
-
-<style>
-    body {
-        background-color: beige;
-        font-family: Arial, sans-serif;
-        color: #333;
-        }
-    header {
-        background-color: #333;
-        color: white;
-        padding: 1px 0;
-        text-align: center;
-        }
-    nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        }
-    h1, h2, h3 {
-        color:#e7b40c;
-        }
-
-    div{
-        margin: 15px;
-        margin-top: 15px;
-        text-align: center;
-        border-radius: 15px;
-        border: #e7b40c 20px;
-        border-color: #e7b40c;
-    }
-    
-    
-</style>
-
 <body>
 
-    <div>
-        <header>
-            <nav>
-                <a href="GUIVU.html">Inicio</a>
-                <a href="GUIVU2.html">Sobre Nosotros</a>
-                <a href="GUIVU3.html">eSports</a>
-                <a href="GUIVU4.html">Noticias</a>
-                <a href="GUIVU5.html">Comunidad</a>
-                <a href="GUIVU6.html">Eventos</a>
-            </nav>
-        </header>
-    </div> 
-    
+    <header>
+        <nav>
+            <a href="GUIVU.html">Inicio</a>
+            <a href="GUIVU2.html">Sobre Nosotros</a>
+            <a href="GUIVU3.html">eSports</a>
+            <a href="GUIVU4.html">Noticias</a>
+            <a href="GUIVU5.html">Comunidad</a>
+            <a href="GUIVU6.html">Eventos</a>
+        </nav>
+    </header>
+
     <div>
         <header>
             <h1>COMUNIDAD</h1>
         </header>
         <section id="community">
-            <h2>Comunidad</h2>
             <p>Únete a nuestra comunidad y participa en eventos y discusiones.</p>
+            <p>Escribe aquí tus comentarios, reseñas y curiosidades sobre el mundo de los videojuegos y sus eventos.</p>
         </section>
+    </div>
+
+    <div>
+        <input type="text" id="name" placeholder="Nombre">
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="message" rows="10" cols="30" required id="comentario"></textarea>
+        <button onclick="publicar()">Enviar</button>
+    </div>
+
+    <script src="comentario.js"></script>
+
+    <div class="container" id="lista">
     </div>
 
 </body>
